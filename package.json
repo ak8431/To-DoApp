@@ -1,0 +1,36 @@
+{
+  "name": "todo-app-angularjs",
+  "version": "1.0.0",
+  "description": "a small todo app in angularjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "angularjs",
+    "todo",
+    "app",
+    "nodejs",
+    "mongodb",
+    "express",
+    "json",
+    "api"
+  ],
+  "author": "amit",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.5"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ak8431/To-DoApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ak8431/To-DoApp/issues"
+  },
+  "homepage": "https://github.com/ak8431/To-DoApp#readme"
+}

@@ -1,0 +1,44 @@
+<h1>Contact App</h1>
+<div class="container-fluid">
+    <div class="col-sm-12">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile Number</th>
+                    <th>Action</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <input type="text" class="form-control" name="name" ng-model="contactDetails.name" required/>
+                </td>
+                <td>
+                    <input type="email" class="form-control" name="email" ng-model="contactDetails.email" required/>
+                </td>
+                <td>
+                    <input type="tel" class="form-control" name="phone" ng-model="contactDetails.phone" required/>
+                </td>
+                <td>
+                    <button class="btn btn-primary" ng-click="addContact()">Add Contact</button>
+                </td>
+                <td>
+                    <button class="btn btn-info" ng-click="updateContact()">Update</button>
+                </td>
+            </tr>
+            <tr ng-repeat="datas1 in contactList">
+                <td>{{datas1.name}}</td>
+                <td>{{datas1.email}}</td>
+                <td>{{datas1.phone}}</td>
+                <td>
+                    <button class="btn btn-warning" ng-click="editContact(datas1._id)">Edit</button>
+                </td>
+                <td>
+                    <button class="btn btn-danger" ng-click="deleteContact(datas1._id)">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
